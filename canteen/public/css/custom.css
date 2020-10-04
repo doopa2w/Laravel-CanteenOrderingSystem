@@ -1,0 +1,32 @@
+/*To push footer to bottom*/
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between
+  }
+
+.table td.fit, 
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.table td {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.jumbotron {
+  padding: 2rem 2rem;
+}
+
+.container {
+  margin-top: 80px;
+  max-width: 1000px;
+}
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
