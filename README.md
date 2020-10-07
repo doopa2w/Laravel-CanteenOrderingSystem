@@ -51,6 +51,13 @@ The setup involves and requires the following tools:
       - Password: 123
 
 
+## Troubleshooting
+In the offchance there are issues with storage_path(framework_session), check and make sure the folder exists by checking it via \\..\\htdocs\\canteen\\storage\\framework\\. Else, create a session folder. Then, run the following commands in the root folder:
+   '''
+   php artisan view:clear
+   php artisan config:clear
+   php artisan config:cache
+   '''
 
 ## Team
 
