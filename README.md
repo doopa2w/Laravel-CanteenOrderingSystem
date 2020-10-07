@@ -10,6 +10,14 @@ The setup involves and requires the following tools:
 - XAMPP or WAMPP 
 - PHP
 
+## File Structure
+- Laravel-CanteenOrderingSystem
+   - canteen (root)
+   - canteen.sql
+   - CanteenOrdering System.vpp (UML)
+   - README.md
+
+
 ## Setup
 
 1. Copy and paste the project 'canteen' to the following folder:	\\...\\xampp\\htdocs\\...
@@ -30,9 +38,9 @@ The setup involves and requires the following tools:
    
 5. Once done, verify whether the root folder is accessible by entering its path in any browser. For example, entering localhost/canteen/ should be able to see the root folder. 
 
-6. Next, go to phpmyadmin and create a database named 'canteen' and choose the 'Collation' for collation.
+6. Next, go to phpmyadmin via http://loaclhost and create a database named 'canteen' and choose the 'Collation' from default 'utf-8' option.
 
-7. Now, import the canteen.sql to seed the database so that the website can run properly. Once import is done, you should see that the database is now officially ready with all the relevant tables and its records.
+7. Now, import the canteen.sql outside the root folder to seed the database so that the website can run properly. Once import is done, you should see that the database is now officially ready with all the relevant tables and its records.
 
 8. There's still another step to allow the website up and running properly. Go to the root folder of the system and open Windows PowerShell via Shift + Right Click. Make sure that the php.exe path is in the PATH environment variable. In the shell, type the following command: php artisan storage:link. Again make sure you are opening the shell in the root!
 
@@ -53,11 +61,13 @@ The setup involves and requires the following tools:
 
 ## Troubleshooting
 In the offchance there are issues with storage_path(framework_session), check and make sure the folder exists by checking it via \\..\\htdocs\\canteen\\storage\\framework\\. Else, create a session folder. Then, run the following commands in the root folder:
-   '''
+
+   ```
    php artisan view:clear
    php artisan config:clear
    php artisan config:cache
-   '''
+   ```
+
 
 ## Team
 
